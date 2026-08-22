@@ -1,0 +1,71 @@
+# Hält den Fork auf dem letzten offiziellen Upstream-Release, mit den lokalen
+# Gerätedefinitionen obendrauf.
+#
+# WICHTIG: Dieser Workflow legt bewusst KEINE Releases an. HACS wählt den Ref in
+# `version_to_download()` so: existiert im Repo auch nur ein Release, wird immer
+# dessen Tag geladen — und Upstream-Tags zeigen auf Upstream-Commits, die unsere
+# Gerätedefinition nicht enthalten. Ohne Releases fällt HACS auf den Default-Branch
+# zurück und verfolgt ihn per Commit-SHA. Genau das wollen wir.
+#
+# Gemerged wird der letzte Release-Tag, nicht upstream/main — sonst würde der Fork
+# dauerhaft Upstreams Entwicklungsstand ausliefern.
+
+name: Sync with upstream release
+
+on:
+  schedule:
+    - cron: "17 4 * * *" # täglich 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch upstream
+        run: |
+          git remote add upstream https://github.com/make-all/tuya-local.git
+          git fetch upstream --tags --prune --force
+
+      - name: Determine latest upstream release
+        id: rel
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="$(gh release view --repo make-all/tuya-local --json tagName -q .tagName)"
+          echo "Neuester Upstream-Release: $tag"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+
+      - name: Merge upstream release
+        id: merge
+        run: |
+          tag="${{ steps.rel.outputs.tag }}"
+          if git merge-base --is-ancestor "$tag" HEAD; then
+            echo "Fork enthält $tag bereits — nichts zu tun."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          # Ein add/add-Konflikt hier bedeutet: Upstream hat eine Gerätedatei mit
+          # demselben Namen aufgenommen. Dann schlägt der Job absichtlich fehl,
+          # damit die lokale Definition nicht still überschrieben wird.
+          git merge --no-edit -m "Merge upstream release $tag" "$tag"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Push
+        if: steps.merge.outputs.changed == 'true'
+        run: git push origin "HEAD:${{ github.ref_name }}"
