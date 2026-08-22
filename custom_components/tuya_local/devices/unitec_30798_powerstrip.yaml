@@ -1,0 +1,139 @@
+name: UNITEC 30798 4x2 powerstrip
+products:
+  - id: keym9qkuywghyrvs
+    manufacturer: UNITEC
+    model: "30798"
+entities:
+  - entity: switch
+    translation_key: outlet_x
+    translation_placeholders:
+      x: "1"
+    class: outlet
+    dps:
+      - id: 1
+        type: boolean
+        name: switch
+  - entity: switch
+    translation_key: outlet_x
+    translation_placeholders:
+      x: "2"
+    class: outlet
+    dps:
+      - id: 2
+        type: boolean
+        name: switch
+  - entity: switch
+    translation_key: outlet_x
+    translation_placeholders:
+      x: "3"
+    class: outlet
+    dps:
+      - id: 3
+        type: boolean
+        name: switch
+  - entity: switch
+    translation_key: outlet_x
+    translation_placeholders:
+      x: "4"
+    class: outlet
+    dps:
+      - id: 4
+        type: boolean
+        name: switch
+
+  - entity: number
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "1"
+    dps:
+      - id: 9
+        type: integer
+        name: value
+        unit: s
+        range:
+          min: 0
+          max: 86400
+  - entity: number
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "2"
+    dps:
+      - id: 10
+        type: integer
+        name: value
+        unit: s
+        range:
+          min: 0
+          max: 86400
+  - entity: number
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "3"
+    dps:
+      - id: 11
+        type: integer
+        name: value
+        unit: s
+        range:
+          min: 0
+          max: 86400
+  - entity: number
+    category: config
+    translation_key: timer_x
+    translation_placeholders:
+      x: "4"
+    dps:
+      - id: 12
+        type: integer
+        name: value
+        unit: s
+        range:
+          min: 0
+          max: 86400
+
+  - entity: sensor
+    category: diagnostic
+    class: current
+    dps:
+      - id: 18
+        type: integer
+        name: sensor
+        class: measurement
+        force: true
+        unit: mA
+  - entity: sensor
+    category: diagnostic
+    class: power
+    dps:
+      - id: 19
+        type: integer
+        name: sensor
+        class: measurement
+        force: true
+        unit: W
+        mapping:
+          - scale: 10
+  - entity: sensor
+    category: diagnostic
+    class: voltage
+    dps:
+      - id: 20
+        type: integer
+        name: sensor
+        class: measurement
+        force: true
+        unit: V
+        mapping:
+          - scale: 10
+
+  - entity: binary_sensor
+    class: problem
+    category: diagnostic
+    name: Fault
+    dps:
+      - id: 26
+        type: bitfield
+        name: sensor
