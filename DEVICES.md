@@ -13,7 +13,7 @@
 - Betterlife BT1500 IR heater
 - Blumfeldt/Klarstein Cosmic Beam Smart 24 infrared radiant heater
 - Brandon Basics towel warmer
-- Breville AirRounder Plus Connect purifier heater
+- Breville AirRounder Plus Connect and AllRounder purifier heaters
 - Bonaire HPC5200020 electric heater
 - BVF CP1 heater
 - Caldo Up T fan heater
@@ -30,6 +30,7 @@
 - Ecostrad Accent iQ heating panel
 - Ecostrad iQ ceramic radiators
 - Ecostrad iQ heating elements
+- EF-R Pro electric fireplace
 - ElectriQ MY130 oil radiator
 - Emke Orbrad PTR towel radiator
 - Essentials Smart Home electric bathroom heater
@@ -194,6 +195,7 @@
 - Evotherm ETI series heat pump
 - Fairland IPHCR15, RMIC06, X20 pool heat pumps (also Pool Systems and other brands)
 - Garden PAC pool heat pump (also works with Summerwave Si Series)
+- Giatsu GIA-BP07MDA pool heat pump
 - Henden Essential pool heat pump
 - Komeco QC60 pool heat pump
 - Madimack Eco, Elite V2,V3,V4 and other model pool heat pumps
@@ -429,7 +431,7 @@
 - KCvents VT501-W heat recovery ventilation
 - Kendal KVT-Touchtower pedestal fan
 - Klarstein Airfold, Bolero ceiling fans with light
-- Klarstein Icewind Plus, Skyscraper Ice, Skytower Grand cooling fans
+- Klarstein Icetower, Icewind Plus, Skyscraper Ice, Skytower Grand cooling fans
 - Keyun MKCFE002 RGB chandelier fan
 - Kogan bladeless, 3D oscillating and heating fans
 - Ledkia fan and light controller
@@ -438,6 +440,7 @@
 - Ligency E26 socket ceiling fan with RGBCW light
 - Living Comfort LC310S twin window fan
 - Lucci Connect Wi-Fi fan remote
+- Lucci Air Radar Connect ceiling fan
 - Lumary A1, B2, C2 ceiling fans with lights
 - Magnovent Cefiro ceiling fan with lights
 - Mantra ceiling fan with light
@@ -506,7 +509,7 @@
 - essentials portable air purifier
 - Himox H05 and H06 air purifiers
 - Homemedics C500 air purifier
-- Honeywell Air Touch P2 Air Purifier
+- Honeywell Air Touch P2 and H-Speed Pro air purifiers
 - Hosome air purifier
 - iHunt 400m³/h and 50m³/h air purifiers
 - Jafanda JF260S and JF500 air purifiers
@@ -603,7 +606,7 @@
 - AlecoAir PU55 Humino humidifier
 - Arida Eva humidifier
 - BlitzWolf BW-SH2, BW-SH5 humidifiers
-- Breville Smart Mist Glow Connect humidifier
+- Breville Smart Mist Glow Connect and Smart Mist Top humidifiers
 - Carro VES1011 humidifier
 - Clean Air Optima CA-604B, CA-605B, CA-607B humidifiers
 - Clofte Duo 400 humidifier
@@ -721,7 +724,7 @@
 - PC311-TY 2 phase power clamp meter
 - PC321-TY 3 phase power clamp meter
 - PC473 3-phase energy monitor
-- PJ-1103, PJ-1103A power clamp meters
+- PJ-1103, PJ-1103A, PJ-1103C power clamp meters
 - PowBay JGQW01-63 energy monitoring circuit breaker
 - PZIOT E01 energy meter
 - SG600MD solar inverter (also SG700MD, other SGxx0MD and SGxx0W models) sold under various brands
@@ -807,6 +810,7 @@ the best option.
 - Arlec PB88UHA 4 way powerstrip with child lock
 - Aubess 1-gang switch with energy monitoring
 - Aubess 2 and 3-gang switches
+- Avatto WSM16-DC-1 dry contact smart switch
 - Aziot 4, 7 and 8 gang multi-switches
 - Bauhn APSW-0624 5 way powerstrip (with unswitched USB)
 - BBCoin AC5299 PCIe computer switch
@@ -968,14 +972,13 @@ of device.
 - Ledvance Smart+ Planon panel light with backlight and Smart+ Planon Magic light
 - Lexi Lighting string light Wifi adapter
 - LightStar CCT track light
+- Liwokit backlit dimmer switch
 - Loycco sound machine with nightlight (also sold as Momland nightlight with white noise)
 - Loycco Smart Nursery light
 - Loginovo TV sync backlight
 - LSC Smart Connect CCT + RGB ceiling light
-- LSC Smart Connect CCT + RGB led strip
+- LSC Smart Connect CCT+RGB, RGB/IC+CCT/IC, Neon, Party led strips
 - LSC Smart Connect garden spotlights
-- LSC Smart Connect Neon LED strip
-- LSC Smart Connect Party string lights
 - LSC smart connect RGB CCT lightbulb (similar to older generic bulbs, so may work for others)
 - Lumary D1 6 inch retrofit downlight (independent RGB ring and CCT centre)
 - Lytmi Fantasy/Neo 3 HDMI sync backlight
@@ -997,6 +1000,7 @@ of device.
 - Outon Smart Lamp
 - Peteme recessed lighting
 - Pinar SmartLux door lights
+- Pixbee Illumi ambient light
 - PowerAsia RGB 6-inch recessed lighting
 - RGB48 RGBIC string light
 - Richelieu tunable white LED puck light (166142030)
@@ -1139,6 +1143,7 @@ work reliably, even if listed below.
 - Neo Coolcam Siren with temperature and humidity alert (NAS-AB02W)
 - Orion Grid Connect SWS07HA indoor siren
 - Orion Grid Connect outdoor siren (also Elesion NX-4980)
+- Qnect SH-SI01-QNE siren
 - Sirena WS-902 Plus outdoor strobe siren
 - STL siren
 
@@ -1273,7 +1278,8 @@ port and password.
 - Rojeco V200 DU3L-VS camera pet feeder
 - Sailesi self-cleaning litter box
 - Sobralik pet fountain
-- Tesla Smart pet feeder
+- TA-FD-BL6 camera pet feeder
+- Tesla Smart fish and pet feeders
 - Ti Pro25 cat litter box
 - Tonepie T1PRO cat litter box
 - Tonepie T1 Pro MAX cat litter box
@@ -1364,9 +1370,10 @@ port and password.
 - Haoliyuen EWC02 air quality monitor
 - Haozee explosive gas leak and carbon monoxide alarm
 - Haozee PS10 mmWave presence sensing light switch
+- Holman Helios weather station
 - Houschen anti-fog bathroom mirror with lights
 - HRT AS90 temperature and humidity alarm
-- Holman Helios weather station
+- HX-002-Z human presence sensor
 - iHseno ZTU human presence sensor
 - idoo Smart Bloom 8 hydroponic system
 - Immax Neo Lite 7-in-1 weather station
@@ -1405,7 +1412,7 @@ port and password.
 - PV28-AW 3-in-1 CO2 monitor
 - PV28-CW 8 in 1 air quality monitor
 - QTFV3-3 air quality monitor
-- Raddy PT-5 pool thermometer
+- Raddy PT-3 and PT-5 pool thermometers
 - RainPoint TTV103FRF water timer
 - RQ400A gas alarm
 - RSE TY-WFH v3.01 gate controller
@@ -1432,6 +1439,7 @@ port and password.
 - Tontine electric blanket
 - TOPENS TC196 remote control for gate openers
 - Treatlife 24GHz mmWave human presence sensor
+- TS100 water quality controller
 - TX-E gas sensor/alarm
 - Vevor YT60307 weather station
 - Vivo FD55 motorized TV mount
@@ -1466,6 +1474,7 @@ port and password.
 - BSTUOKEY Invisible induction door lock
 - Diivoo DWV010, WT05 dual water timers
 - Dituo DT-T2190A aroma diffuser
+- Eshico HCT-622 single valve water timer
 - Gainsborough Liberty entrance lock
 - HCT-611 water timer
 - HCT-626 dual water timer
